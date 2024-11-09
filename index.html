@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="procedures_container">
+            <form id="apiForm" class="procedures">
+                    <div class="procedures_item">
+                        <input type="text" id="idInstance" placeholder="idInstance" required>
+                        <input type="text" id="apiTokenInstance" placeholder="apiTokenInstance" required>
+                    </div>
+
+                    <div class="procedures_item">
+                        <button type="button" id="getSettingsBtn">getSettings</button>
+                        <button type="button" id="getStateInstanceBtn">getStateInstance</button>
+                    </div>
+
+                    <div class="procedures_item">
+                        <input type="text" id="chatId_sendMessage" placeholder="chatId" required>
+                        <textarea id="message" placeholder="message" required></textarea>
+                        <button type="button" id="sendMessageBtn">sendMessage</button>
+                    </div>
+
+                    <div class="procedures_item">
+                        <input type="text" id="chatId_sendFile" placeholder="chatId" required>
+                        <input type="text" id="fileUrl" placeholder="fileUrl" required>
+                        <input type="text" id="fileName" placeholder="fileName" required>
+                        <button type="button" id="sendFileByUrl">sendFileByUrl</button>
+                    </div>
+            </form>
+        </div>
+
+        <div class="response_container">
+            <h2>Ответ:</h2>
+            <textarea id="response_field" readonly></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
